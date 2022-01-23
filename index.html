@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Speed Controller</title>
+	<link rel="stylesheet" href="./styles.css">
+	<link href="https://kasapvictor.ru/wp-content/themes/kasapvictor/assets/images/3256x256.png" rel="apple-touch-icon">
+	<link href="https://kasapvictor.ru/wp-content/themes/kasapvictor/assets/images/32x32.png" rel="shortcut icon"
+	      type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+	<div class="app">
+		<div class="app__title">
+			<h1>Video Speed Controller</h1>
+		</div>
+
+		<div class="app__inner">
+			<div class="app__video-wrap">
+				<video class="app__video" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+				<div class="app__video-notice">Speed: x1</div>
+			</div>
+			<div class="app__range range-wrap">
+				<label class="range__field">
+					<input type="range" class="range__input" min="10" max="100" value="40" step="10" name="video">
+					<span class="range__fill"></span>
+					<span class="range__fill-bg"></span>
+				</label>
+			</div>
+			<div class="app__bg"></div>
+		</div>
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
